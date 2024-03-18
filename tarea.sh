@@ -4,9 +4,11 @@ echo " (•◡•)/ Hola!!"
 read -p " (•o•) Cúal es tu nombre? " nombre
 echo " (^◡^) Bienvenido" $nombre 
 read -p "Cúal es tu edad? " edad
-
+etapas=""
 if [ $edad -ge 18 ]; then
-echo "$nombre tu edad es de $edad años lo que significa que eres un adulto (゜▽゜;)" 
+etapas="eres un adulto"
 else
-echo "$nombre tu edad es de $edad lo que significa que eres un niño (⌒▽⌒)☆"
+etapas="eres un niño"
 fi
+
+echo "$nombre tu edad es $edad años lo que significa que eres un $etapas"
